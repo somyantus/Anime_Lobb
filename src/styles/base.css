@@ -1,0 +1,76 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+
+  --vt-c-black: #181818;
+
+  --vt-c-brown: #424040;
+
+  --vt-c-grey: #cfcece;
+  --vt-c-grey-1: #f3f3f3;
+  --vt-c-grey-2: #c4c0c063;
+
+  --vt-c-blue: #3498db;
+  --vt-c-bright-blue: #211df9;
+
+  --vt-c-light-grey: rgba(255, 255, 255, 0.8);
+  --vt-c-light-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --vt-c-dark-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  --vt-c-gradient: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0, 0, 0, 0.2), rgba(0,0,0,0));
+  --vt-c-right-gradient: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+
+  --vt-c-text-dark: #63605f;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+
+    --color-text: var(--vt-c-text-dark);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background-color: var(--vt-c-grey-2);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
