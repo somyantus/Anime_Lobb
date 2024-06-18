@@ -27,26 +27,26 @@ store.setScreensize(screenSize)
     <div>
         <!-- For small screen size -->
         <div v-if="screenSize === 'small'" class="hero-section"
-            :style="{ 'background-image': 'url(' + store.animeData.content.thumbNailImage + ')' }">
+            :style="{ 'background-image': 'url(' + store.animeData?.content.thumbNailImage + ')' }">
             <div class="button-block">
                 <RouterLink class="close-button" to="/"><font-awesome-icon icon="xmark" /></RouterLink>
             </div>
             <div class="heading-block">
                 <p class="small-hero-title">Major Update</p>
             </div>
-            <h1 class="title">{{ store.animeData.content.subTitle }}</h1>
+            <h1 class="title">{{ store.animeData?.content.subTitle }}</h1>
             <div class="overlay"></div>
         </div>
         <!-- For medium screen size -->
         <div v-if="screenSize === 'medium'" class="hero-section"
-            :style="{ 'background-image': 'url(' + store.animeData.content.thumbNailImage + ')' }">
+            :style="{ 'background-image': 'url(' + store.animeData?.content.thumbNailImage + ')' }">
             <div class="button-block">
                 <RouterLink class="close-button" to="/"><font-awesome-icon icon="xmark" /></RouterLink>
             </div>
             <div class="hero-content-medium">
                 <div class="content-block-medium">
                     <p class="small-hero-title">Major Update</p>
-                    <h1 class="title">{{ store.animeData.content.subTitle }}</h1>
+                    <h1 class="title">{{ store.animeData?.content.subTitle }}</h1>
                     <RefreshBlock padding="1.5rem 2rem" border-radius="0.5rem"
                         box-shadow="rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px" />
                 </div>
