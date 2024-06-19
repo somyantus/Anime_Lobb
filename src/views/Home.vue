@@ -3,5 +3,5 @@ import HomePage from '@/layout/HomePage.vue'
 </script>
 
 <template>
-    <HomePage />
+   <HomePage />
 </template>
