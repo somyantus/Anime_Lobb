@@ -1,7 +1,7 @@
 import { defineConfig } from 'cypress'
 
 export default defineConfig({
-   projectId: 'ftgxp9',
+   projectId: 'pvbnm6',
    component: {
       devServer: {
          framework: 'vue',
